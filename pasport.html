@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Паспорт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Паспорт</h1>
+    <nav>
+        <a href="index.html">
+            <img src="images/logo.jpg" alt="Логотип сайта" width="80" height="80">
+        </a>
+    </nav>
+
+    <main>
+        <div class="passport-container">
+            <img src="images/pasport2.jpg" alt="Паспорт РФ" class="passport-image" width="400px" height="200px">
+
+            <div class="passport-content">
+                <div class="text" id="issued">ГУ МВД РОССИИ ПО Г.МОСКВЕ</div>
+                <div class="text" id="surname">Газизова</div>
+                <div class="text" id="name">Белла</div>
+                <div class="text" id="father">Радиковна</div>
+                <div class="text" id="gender">Жен.</div>
+                <div class="text" id="birthplace">г. Москва</div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button id="translateButton">Поменять</button>
+        </div>
+    </main>
+
+    <h1>Личные данные паспорта</h1>
+    <p>Фамилия: <span id="lastName">Газизова</span></p>
+    <p>Имя: <span id="firstName">Белла</span></p>
+    <p>Год рождения: <span id="birthYear">2000</span></p>
+    <span id="new">это тестовое окно</span>
+
+    <button id="getInfoButton">Получить информацию из DOM:</button>
+    <div id="info"></div>
+
+    <a href="#top" class="back-to-top">Вернуться наверх</a>
+
+    <script src="pasport.js"></script>
+</body>
+</html>

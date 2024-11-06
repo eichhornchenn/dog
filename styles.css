@@ -1,0 +1,253 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Светло-голубой фон */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #007bb5; /* Темно-синий цвет заголовков */
+    margin: 20px 0;
+}
+
+p {
+    line-height: 1.6;
+    margin: 10px 20px;
+}
+
+/* Стили для навигации */
+header {
+    background-color: #007bb5; /* Темно-синий фон для навигации */
+    padding: 10px 0;
+    color: #fff;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffeb3b; /* Желтый при наведении */
+}
+
+header nav img {
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+header nav img:hover {
+    transform: scale(1.1);
+}
+
+/* Стили для внутренней навигации */
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #007bb5;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #005f8c; /* Темный оттенок синего при наведении */
+}
+
+/* Стили для таблицы */
+.image-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-image: url("images/background.jpeg"); /* Задний фон для таблицы */
+    background-size: cover; /* Растягивает изображение на весь фон */
+    background-position: center;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-table td {
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон для улучшения читаемости */
+    font-size: 1.1em;
+}
+
+.image-table img {
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.image-table img:hover {
+    transform: scale(1.1); /* Увеличивает изображение при наведении */
+}
+
+/* Стили для изображений */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Устанавливаем фон для контейнера */
+.passport-container {
+    position: relative; /* Важно для использования абсолютного позиционирования внутри */
+    display: inline-block;
+}
+
+.passport-image {
+    width: 60%; /* Стандартная ширина изображения */
+    height: auto;
+}
+.passport-container {
+    position: relative; /* Это необходимо для абсолютного позиционирования внутри контейнера */
+}
+
+/* Текстовые блоки */
+.text {
+    position: absolute; /* Абсолютное позиционирование */
+    color: rgb(3, 0, 0); 
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+/* Пример позиционирования для разных элементов */
+#issued {
+    top: 20%; /* Расположим элемент немного ниже верхней части */
+    left: 40%; /* Слева от центра */
+}
+
+#surname {
+    top: 55%; /* Нижняя позиция на 25% от верхнего края */
+    left: 50%; /* Расположение по горизонтали */
+}
+
+#name {
+    top: 63%; /* Позиция ниже фамилии */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translateX(-50%); /* Центрирование по горизонтали с учётом размера */
+}
+
+#father {
+    top: 66%; /* Позиция для отчества */
+    left: 50%;
+}
+
+#gender {
+    top: 70%; /* Позиция для пола */
+    left: 43%;
+}
+
+#birthplace {
+    top: 70%; /* Позиция для места рождения */
+    left: 60%;
+}
+
+
+.text {
+    margin: 10px 0;
+}
+
+/* Стиль для кнопок */
+.button-container {
+    margin-top: 20px;
+}
+
+/* Стиль для данных */
+#info {
+    margin-top: 20px;
+}
+
+/* Стили для ссылок */
+a {
+    color: #007bb5;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #005f8c;
+}
+
+/* Стили для формы */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="password"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bb5;
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #005f8c;
+}
+
+/* Стили для списков */
+ul, ol {
+    list-style-position: inside;
+    padding-left: 20px; /* Отступ слева */
+    margin: 10px 0; /* Отступ сверху и снизу */
+}
+
+ul ul, ol ol {
+    margin-left: 20px; /* Отступ для вложенных списков */
+}

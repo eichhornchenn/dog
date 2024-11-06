@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="Логотип сайта" width="80" height="80">
+            </a>
+            <a href="breeds.html">Породы</a>
+            <a href="contact.html">Контакты</a>
+            <a href="table.html">Таблица</a>
+            <a href="задача.html">Задача</a>
+            <a href="pasport.html">Passport</a>
+            <a href="reviews.html" class="active">Отзывы</a>
+            <a href="https://example.com" target="_blank">Внешний сайт</a>
+            <a href="breeds.html#labradors">Лабрадоры</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Оставьте отзыв</h1>
+        <form action="https://www.bing.com/?cc=ru" method='get' target='_self'>
+            
+            <!-- Скрытое поле для уникального идентификатора -->
+            <input type="hidden" name="review_id" value="9876543210">
+
+            <!-- Поле для имени респондента -->
+            <label for="reviewer">Ваше имя:</label>
+            <input type="text" id="reviewer" name="reviewer" value="Иван Иванов" required><br><br>
+
+            <!-- Поле для оценки -->
+            <label for="rating">Оценка (от 1 до 5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" value="5" required><br><br>
+
+            <!-- Поле для комментария -->
+            <label for="comments">Комментарий:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Ваш отзыв..."></textarea><br><br>
+
+            <!-- Вопрос о владельце собаки (radio) -->
+            <label>Вы являетесь владельцем собаки?</label><br>
+            <input type="radio" id="yes" name="owner" value="yes" checked>
+            <label for="yes">Да</label><br>
+            <input type="radio" id="no" name="owner" value="no">
+            <label for="no">Нет</label><br><br>
+
+            <!-- Подписка на новости (checkbox) -->
+            <label for="notify">Подписаться на новости:</label>
+            <input type="checkbox" id="notify" name="notify" value="yes" checked><br><br>
+
+            <!-- Поле для выбора даты -->
+            <label for="date">Дата вашего отзыва:</label>
+            <input type="date" id="date" name="date" value="2024-11-06" required><br><br>
+
+            <!-- Поле для пароля -->
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required placeholder="Введите ваш пароль"><br><br>
+
+            <!-- Кнопка отправки формы -->
+            <button type="submit">Отправить</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Сайт о собаках. Все права защищены.</p>
+    </footer>
+</body>
+</html>
