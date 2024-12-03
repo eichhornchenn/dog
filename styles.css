@@ -42,6 +42,10 @@ header nav a:hover {
     color: #ffeb3b; /* Желтый при наведении */
 }
 
+header nav a.active {
+    background-color: #005f8c; /* Темно-синий фон для активной ссылки */
+    color: #ffeb3b; /* Желтый текст */
+}
 header nav img {
     vertical-align: middle;
     width: 80px;
@@ -323,4 +327,20 @@ h1 {
 
 .dog-block button:hover {
     background-color: #005f8c;
+}
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Пример стилизации для Bootstrap */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
 }
